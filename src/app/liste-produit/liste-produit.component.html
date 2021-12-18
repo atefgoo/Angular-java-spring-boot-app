@@ -1,0 +1,28 @@
+<h2>Liste des Produits</h2>
+<br>
+<table class="table table-condensed">
+    
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Prix Achat</th>
+            <th>Prix Vente</th>
+            <th>Stock</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let produit of produits">
+            <td>{{produit.id}}</td>
+            <td>{{produit.description}}</td>
+            <td>{{produit.prixAchat}}</td>
+            <td>{{produit.prixVente}}</td>
+            <td>{{produit.stock}}</td>
+            <td><button class="btn btn-danger" (click)="delete(produit.id)">delete</button></td>
+
+        </tr>
+    </tbody>
+</table>
+

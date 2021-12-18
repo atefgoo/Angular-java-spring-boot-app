@@ -1,0 +1,19 @@
+
+<h2>Liste des Magasins</h2>
+<br>
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Lieu</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let magasin of magasins">
+            <td>{{magasin.id}}</td>
+            <td>{{magasin.nom}}</td>
+            <td>{{magasin.lieu}}</td>
+        </tr>
+    </tbody>
+</table>
